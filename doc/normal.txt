@@ -1,0 +1,49 @@
+   0.477: dc [[32m1[0m src=0x0a] [[32m0[0m dst=0x00] [[32mlen[0m] 06 3d 0d 05 19 [32mCRC OK[0m
+   0.566: dc [[32m1[0m src=0x00] [[32m0[0m dst=0x0a] [[32mlen[0m] 07 0d 3d 05 19 00 0f 2c [32mCRC OK[0m
+  10.577: dc [[32m1[0m src=0x0a] [[32m0[0m dst=0x00] [[32mlen[0m] 06 3d 0d 05 19 [32mCRC OK[0m
+  10.666: dc [[32m1[0m src=0x00] [[32m0[0m dst=0x0a] [[32mlen[0m] 07 0d 3d 05 19 00 0f 25 [32mCRC OK[0m
+  20.676: dc [[32m1[0m src=0x0a] [[32m0[0m dst=0x00] [[32mlen[0m] 06 3d 0d 05 19 [32mCRC OK[0m
+  20.764: dc [[32m1[0m src=0x00] [[32m0[0m dst=0x0a] [[32mlen[0m] 07 0d 3d 05 19 00 0f 25 [32mCRC OK[0m
+  30.775: dc [[32m1[0m src=0x0a] [[32m0[0m dst=0x00] [[32mlen[0m] 06 3d 0d 05 19 [32mCRC OK[0m
+  30.864: dc [[32m1[0m src=0x00] [[32m0[0m dst=0x0a] [[32mlen[0m] 07 0d 3d 05 19 00 0f 2c [32mCRC OK[0m
+  36.626: dc [[32m1[0m src=0x06] [[32m0[0m dst=0x00] [[32mlen[0m] 02 3d 2d 02 15 05 73 00 [32mCRC OK[0m
+  40.874: dc [[32m1[0m src=0x0a] [[32m0[0m dst=0x00] [[32mlen[0m] 06 3d 0d 05 19 [32mCRC OK[0m
+  40.963: dc [[32m1[0m src=0x00] [[32m0[0m dst=0x0a] [[32mlen[0m] 07 0d 3d 05 19 00 0f 2c [32mCRC OK[0m
+  50.974: dc [[32m1[0m src=0x0a] [[32m0[0m dst=0x00] [[32mlen[0m] 06 3d 0d 05 19 [32mCRC OK[0m
+  51.062: dc [[32m1[0m src=0x00] [[32m0[0m dst=0x0a] [[32mlen[0m] 07 0d 3d 05 19 00 0f 25 [32mCRC OK[0m
+  61.074: dc [[32m1[0m src=0x0a] [[32m0[0m dst=0x00] [[32mlen[0m] 06 3d 0d 05 19 [32mCRC OK[0m
+  61.163: dc [[32m1[0m src=0x00] [[32m0[0m dst=0x0a] [[32mlen[0m] 07 0d 3d 05 19 00 0f 1e [32mCRC OK[0m
+  70.109: dc [[32m1[0m src=0x00] [[32m0[0m dst=0x7f] [[32mlen[0m] 02 2e 00 02 11 00 00 ff ff ff ff ff ff 00 00 [32mCRC OK[0m
+  70.524: de [[32m1[0m src=0x00] [[32m0[0m dst=0x7f] [[32mlen[0m] 02 05 00 00 69 20 00 [32mCRC OK[0m
+  70.851: de [[32m1[0m src=0x00] [[32m0[0m dst=0x7f] [[32mlen[0m] 02 05 00 00 69 20 00 [32mCRC OK[0m
+  71.172: dc [[32m1[0m src=0x0a] [[32m0[0m dst=0x00] [[32mlen[0m] 06 3d 0d 05 19 [32mCRC OK[0m
+  71.259: de [[32m1[0m src=0x00] [[32m0[0m dst=0x7f] [[32mlen[0m] 02 05 00 00 69 20 00 [32mCRC OK[0m
+  71.609: dc [[32m1[0m src=0x00] [[32m0[0m dst=0x0a] [[32mlen[0m] 07 0d 3d 05 19 00 0f 10 [32mCRC OK[0m
+  71.713: dc [[32m1[0m src=0x00] [[32m0[0m dst=0x7f] [[32mlen[0m] 02 31 00 02 12 01 00 c5 [32mCRC OK[0m
+  81.573: dc [[32m1[0m src=0x0a] [[32m0[0m dst=0x00] [[32mlen[0m] 06 3d 0d 05 19 [32mCRC OK[0m
+  81.662: dc [[32m1[0m src=0x00] [[32m0[0m dst=0x0a] [[32mlen[0m] 07 0d 3d 05 19 00 0f 03 [32mCRC OK[0m
+  91.671: dc [[32m1[0m src=0x0a] [[32m0[0m dst=0x00] [[32mlen[0m] 06 3d 0d 05 19 [32mCRC OK[0m
+  91.760: dc [[32m1[0m src=0x00] [[32m0[0m dst=0x0a] [[32mlen[0m] 07 0d 3d 05 19 00 0f 03 [32mCRC OK[0m
+  96.624: dc [[32m1[0m src=0x06] [[32m0[0m dst=0x00] [[32mlen[0m] 02 3d 2d 02 15 05 74 00 [32mCRC OK[0m
+  99.731: dc [[32m1[0m src=0x00] [[32m0[0m dst=0x7f] [[32mlen[0m] 02 2d 00 02 11 01 02 24 84 ff ff ff ff 02 01 [32mCRC OK[0m
+ 101.771: dc [[32m1[0m src=0x0a] [[32m0[0m dst=0x00] [[32mlen[0m] 06 3d 0d 05 19 [32mCRC OK[0m
+ 101.926: dc [[32m1[0m src=0x00] [[32m0[0m dst=0x0a] [[32mlen[0m] 07 0d 3d 05 19 00 0f 03 [32mCRC OK[0m
+ 111.870: dc [[32m1[0m src=0x0a] [[32m0[0m dst=0x00] [[32mlen[0m] 06 3d 0d 05 19 [32mCRC OK[0m
+ 111.960: dc [[32m1[0m src=0x00] [[32m0[0m dst=0x0a] [[32mlen[0m] 07 0d 3d 05 19 00 0e fb [32mCRC OK[0m
+ 121.969: dc [[32m1[0m src=0x0a] [[32m0[0m dst=0x00] [[32mlen[0m] 06 3d 0d 05 19 [32mCRC OK[0m
+ 122.061: dc [[32m1[0m src=0x00] [[32m0[0m dst=0x0a] [[32mlen[0m] 07 0d 3d 05 19 00 0f 03 [32mCRC OK[0m
+ 132.070: dc [[32m1[0m src=0x0a] [[32m0[0m dst=0x00] [[32mlen[0m] 06 3d 0d 05 19 [32mCRC OK[0m
+ 132.216: dc [[32m1[0m src=0x00] [[32m0[0m dst=0x0a] [[32mlen[0m] 07 0d 3d 05 19 00 0f 09 [32mCRC OK[0m
+ 134.592: dc [[32m1[0m src=0x0a] [[32m0[0m dst=0x7f] [[32mlen[0m] 02 05 00 00 6c 00 70 0c 0b 02 12 01 26 00 [32mCRC OK[0m
+ 139.757: dc [[32m1[0m src=0x00] [[32m0[0m dst=0x7f] [[32mlen[0m] 02 05 00 02 13 04 00 00 19 [32mCRC OK[0m
+ 142.168: dc [[32m1[0m src=0x0a] [[32m0[0m dst=0x00] [[32mlen[0m] 06 3d 0d 05 19 [32mCRC OK[0m
+ 142.264: dc [[32m1[0m src=0x00] [[32m0[0m dst=0x0a] [[32mlen[0m] 07 0d 3d 05 19 00 0f 03 [32mCRC OK[0m
+ 152.267: dc [[32m1[0m src=0x0a] [[32m0[0m dst=0x00] [[32mlen[0m] 06 3d 0d 05 19 [32mCRC OK[0m
+ 152.365: dc [[32m1[0m src=0x00] [[32m0[0m dst=0x0a] [[32mlen[0m] 07 0d 3d 05 19 00 0f 09 [32mCRC OK[0m
+ 156.636: dc [[32m1[0m src=0x06] [[32m0[0m dst=0x00] [[32mlen[0m] 02 3d 2d 02 15 05 76 00 [32mCRC OK[0m
+ 162.367: dc [[32m1[0m src=0x0a] [[32m0[0m dst=0x00] [[32mlen[0m] 06 3d 0d 05 19 [32mCRC OK[0m
+ 162.466: dc [[32m1[0m src=0x00] [[32m0[0m dst=0x0a] [[32mlen[0m] 07 0d 3d 05 19 00 0f 03 [32mCRC OK[0m
+ 172.466: dc [[32m1[0m src=0x0a] [[32m0[0m dst=0x00] [[32mlen[0m] 06 3d 0d 05 19 [32mCRC OK[0m
+ 172.567: dc [[32m1[0m src=0x00] [[32m0[0m dst=0x0a] [[32mlen[0m] 07 0d 3d 05 19 00 0f 09 [32mCRC OK[0m
+ 182.566: dc [[32m1[0m src=0x0a] [[32m0[0m dst=0x00] [[32mlen[0m] 06 3d 0d 05 19 [32mCRC OK[0m
+ 182.668: dc [[32m1[0m src=0x00] [[32m0[0m dst=0x0a] [[32mlen[0m] 07 0d 3d 05 19 00 0f 09 [32mCRC OK[0m

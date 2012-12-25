@@ -1,1 +1,1 @@
-dist_bin_SCRIPTS = gen-RTCstatus.pl velbus-parse.pl
+dist_bin_SCRIPTS = elcobus-parse.pl

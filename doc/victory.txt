@@ -1,0 +1,16 @@
+$ (sleep 1; echo -ne "\xdc\x81\x00\x0b\x06\x3d\x0d\x05\x19\x99\x23"; sleep 2; echo -ne "\xdc\x81\x00\x0b\x06\x3d\x0d\x05\x19\x99\x23"; sleep 10) | ./serial /dev/tty.usbserial | ./decode-serial.pl 
+Opened serial port
+Configured serial port, listening
+Useless use of a constant in void context at ./decode-serial.pl line 62.
+Useless use of a constant in void context at ./decode-serial.pl line 62.
+Useless use of a constant in void context at ./decode-serial.pl line 65.
+Useless use of a constant in void context at ./decode-serial.pl line 68.
+Useless use of a constant in void context at ./decode-serial.pl line 71.
+Useless use of a constant in void context at ./decode-serial.pl line 74.
+ 1356366621.000: dc [1 src=0x01] [0 dst=0x00] [len] 06 3d 0d 05 19 CRC OK   
+ 1356366621.000: dc [1 src=0x00] [0 dst=0x01] [len] 07 0d 3d 05 19 00 0b e7 CRC OK   Boilertemp=47.609375
+ 1356366623.000: dc [1 src=0x01] [0 dst=0x00] [len] 06 3d 0d 05 19 CRC OK   
+ 1356366623.000: dc [1 src=0x00] [0 dst=0x01] [len] 07 0d 3d 05 19 00 0b ee CRC OK   Boilertemp=47.71875
+ 1356366624.000: dc [1 src=0x0a] [0 dst=0x00] [len] 06 3d 0d 05 19 CRC OK   
+ 1356366624.000: dc [1 src=0x00] [0 dst=0x0a] [len] 07 0d 3d 05 19 00 0b e7 CRC OK   Boilertemp=47.609375
+^C

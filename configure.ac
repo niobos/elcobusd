@@ -1,16 +1,14 @@
-AC_INIT([velbusd],
+AC_INIT([elcobusd],
 	[0.0.01],
 	[Niobos niobos@dest-unreach.be],
-	[velbusd])
+	[elcobusd])
 AC_CONFIG_AUX_DIR(config)
 AC_CONFIG_HEADERS(config.h)     dnl output results to config.h
 AM_INIT_AUTOMAKE([dist-bzip2 subdir-objects -Wall])
 
 # Options
 #########
-AC_DEFINE([WANT_OPTIMISTIC_BUS],[true],[Assume the bus is free on start])
-AC_ARG_ENABLE([optimistic-bus], AC_HELP_STRING([--enable-optimistic-bus],[Assume the bus is ready unless we receive the contrary]))
-AS_IF([test x$enable_optimistic_bus != xyes], [AC_DEFINE([WANT_OPTIMISTIC_BUS],[false])] )
+# None
 
 # Checks for programs
 #####################
@@ -54,7 +52,6 @@ AC_CONFIG_FILES([
 	rrdtool/Makefile
 	src/Makefile
 	test/Makefile
-	www/Makefile
 	])
 
 AC_OUTPUT
