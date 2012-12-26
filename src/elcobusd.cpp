@@ -143,6 +143,12 @@ void ready_to_read(EV_P_ ev_io *w, int revents) throw() {
 		return; // early
 	}
 
+	if( c == &serial ) {
+		for(std::string::iterator it = buf.begin(); it != buf.end(); ++it) {
+			// Invert bits, Elco-bus specific
+			*it = ~(*it);
+		}
+	}
 	c->buf.append(buf);
 
 	// Queue the processing job
@@ -175,13 +181,6 @@ void process_read_data(EV_P_ ev_idle *w, int revents) {
 	}
 
 	*log << c->id << " : " << m->string() << "\n" << std::flush;
-	if( c != &serial ) {
-		try {
-			write(serial.sock, msg);
-		} catch( IOError &e ) {
-			throw;
-		}
-	}
 	for( typeof(c_network.begin()) i = c_network.begin(); i != c_network.end(); ++i ) {
 		if( &(*i) == c ) continue; // Don't loop input to same socket
 		try {
@@ -191,6 +190,17 @@ void process_read_data(EV_P_ ev_idle *w, int revents) {
 			ev_io *w = &( i->read_ready );
 			--i; // Prepare iterator for deletion
 			kill_connection(EV_A_ w );
+		}
+	}
+	if( c != &serial ) {
+		for(std::string::iterator it = msg.begin(); it != msg.end(); ++it) {
+			// Invert bits, Elco-bus specific
+			*it = ~(*it);
+		}
+		try {
+			write(serial.sock, msg);
+		} catch( IOError &e ) {
+			throw;
 		}
 	}
 }

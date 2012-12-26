@@ -14,7 +14,8 @@ namespace ElcobusMessage {
 	};
 
 	struct factory_methods {
-		ElcobusMessage* (*factory)(std::string const &);
+		ElcobusMessage* (*factory)(unsigned char, unsigned char,
+				unsigned char, std::string const &);
 	};
 
 	typedef ::Registrar<

@@ -28,9 +28,13 @@ public:
 
 class ElcobusMessage {
 public:
+	unsigned char m_header;
+	unsigned char m_from;
+	unsigned char m_to;
 
 protected:
-	ElcobusMessage() throw() {};
+	ElcobusMessage(unsigned char header, unsigned char from, unsigned char to) throw() :
+		m_header(header), m_from(from), m_to(to) {};
 
 public:
 	virtual ~ElcobusMessage() {}
