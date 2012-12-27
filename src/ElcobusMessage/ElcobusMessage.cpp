@@ -25,7 +25,7 @@ ElcobusMessage* parse_and_consume(std::string &msges, std::string *msg)
 	unsigned char from = msges[1] & 0x7f;
 	unsigned char to = msges[2] & 0x7f;
 
-	size_t length = msges[3];
+	size_t length = static_cast<unsigned char>(msges[3]);
 	if( msges.length() < length ) throw InsufficientData();
 
 	boost::uint16_t crc_msg = (static_cast<uint16_t>(static_cast<unsigned char>(msges[length-2])) << 8)
