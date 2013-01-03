@@ -107,6 +107,19 @@ push @parser, sub { # Tap Temperature {{{
 			$header, $src, $dst, hexdump(@data[0..5]), $temp);
 }; # }}}
 
+push @parser, sub { # Tap Set Temperature {{{
+	my ($header, $src, $dst, $data, @data) = @_;
+
+	return undef unless @data == 8;
+	return undef unless $data[3] == 0x07;
+	return undef unless $data[4] == 0x4b;
+
+	my $temp = twos_complement( @data[6..7] ) / 64;
+
+	return sprintf("TapSetTemp: Hdr=0x%02x Src=0x%02x Dst=0x%02x data[6]=%s  Temp=%3.2fC",
+			$header, $src, $dst, hexdump(@data[0..5]), $temp);
+}; # }}}
+
 push @parser, sub { # Status {{{
 	my ($header, $src, $dst, $data, @data) = @_;
 
