@@ -9,3 +9,9 @@ for f in *-BT.rrd; do
 	echo "Updating BT $ADDR"
 	"$TOOLPATH/update-BT.sh" "$ADDR"
 done
+
+for f in *-TWT.rrd; do
+	ADDR="${f%%-TWT.rrd}"
+	echo "Updating TWT $ADDR"
+	"$TOOLPATH/update-TWT.sh" "$ADDR"
+done
