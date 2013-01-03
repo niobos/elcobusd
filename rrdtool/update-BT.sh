@@ -25,7 +25,7 @@ DATA="$(
 		print "\xdc\x81\x00\x0b\x06\x3d\x0d\x05\x19\x99\x23";
 		sleep 1;
 		print "\xdc\x81\x00\x0b\x06\x3d\x0d\x09\x23\x4b\x57";
-		sleep 3;
+		sleep 2;
 		' |
 	socat - TCP6:[::1]:8446 | $BINPATH/elcobus-log-bus.pl | $BINPATH/elcobus-parse-log.pl
 )"
