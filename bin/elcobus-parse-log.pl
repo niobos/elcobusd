@@ -131,6 +131,17 @@ push @parser, sub { # Status {{{
 			$header, $src, $dst, hexdump(@data[0..5]), $data[6]);
 }; # }}}
 
+push @parser, sub { # Modulation % {{{
+	my ($header, $src, $dst, $data, @data) = @_;
+
+	return undef unless @data == 7;
+	return undef unless $data[3] == 0x30;
+	return undef unless $data[4] == 0x5f;
+
+	return sprintf("Modulation: Hdr=0x%02x Src=0x%02x Dst=0x%02x data[5]=%s  Modulation=%d%%",
+			$header, $src, $dst, hexdump(@data[0..5]), $data[6]);
+}; # }}}
+
 
 
 
