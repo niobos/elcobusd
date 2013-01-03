@@ -15,3 +15,9 @@ for f in *-TWT.rrd; do
 	echo "Updating TWT $ADDR"
 	"$TOOLPATH/update-TWT.sh" "$ADDR"
 done
+
+for f in *-OT.rrd; do
+	ADDR="${f%%-OT.rrd}"
+	echo "Updating OT $ADDR"
+	"$TOOLPATH/update-OT.sh" "$ADDR"
+done
