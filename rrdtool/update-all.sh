@@ -21,3 +21,9 @@ for f in *-OT.rrd; do
 	echo "Updating OT $ADDR"
 	"$TOOLPATH/update-OT.sh" "$ADDR"
 done
+
+for f in *-burner.rrd; do
+	ADDR="${f%%-burner.rrd}"
+	echo "Updating burner $ADDR"
+	"$TOOLPATH/update-burner.sh" "$ADDR"
+done
