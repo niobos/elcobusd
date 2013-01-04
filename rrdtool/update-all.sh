@@ -27,3 +27,9 @@ for f in *-burner.rrd; do
 	echo "Updating burner $ADDR"
 	"$TOOLPATH/update-burner.sh" "$ADDR"
 done
+
+for f in *-status.rrd; do
+	ADDR="${f%%-status.rrd}"
+	echo "Updating status $ADDR"
+	"$TOOLPATH/update-status.sh" "$ADDR"
+done
