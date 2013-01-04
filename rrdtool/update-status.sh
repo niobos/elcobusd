@@ -31,6 +31,10 @@ DATA="$(
 
 STATUS="$(   echo "$DATA" | grep " : Status:" | tail -n1 | sed 's/.*Status=\([0-9]*\).*/\1/' )"
 
+# cap status measurment to the beginning of each minute in order to avoid averaging by RRD
+TS="$( date +%s )"
+TS=$(( $TS - ($TS % 60) ))
+
 rrdtool update "$FILENAME" --template \
 	"status" \
-	"N:${STATUS:-U}"
+	"$TS:${STATUS:-U}"
