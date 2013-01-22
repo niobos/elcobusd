@@ -70,6 +70,7 @@ if ($refresh != 0)
 
  <p>
   <img alt="graph" src="graphs/elco_burner.php?<?php echo change_get($_GET, array()); ?>" /><br/>
+  <img alt="graph" src="graphs/elco_pump.php?<?php echo change_get($_GET, array()); ?>" /><br/>
   <img alt="graph" src="graphs/elco_boiler.php?<?php echo change_get($_GET, array()); ?>" /><br/>
   <img alt="graph" src="graphs/velbus.temp.php?id=04&name=living&<?php echo change_get($_GET, array()); ?>" /><br/>
   <img alt="graph" src="graphs/velbus.temp.php?id=0f&name=bathroom&<?php echo change_get($_GET, array()); ?>" /><br/>
