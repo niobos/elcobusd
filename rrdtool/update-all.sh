@@ -33,3 +33,9 @@ for f in *-status.rrd; do
 	echo "Updating status $ADDR"
 	"$TOOLPATH/update-status.sh" "$ADDR"
 done
+
+for f in *-pump.rrd; do
+	ADDR="${f%%-pump.rrd}"
+	echo "Updating pump $ADDR"
+	"$TOOLPATH/update-pump.sh" "$ADDR"
+done

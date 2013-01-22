@@ -142,6 +142,17 @@ push @parser, sub { # Modulation % {{{
 			$header, $src, $dst, hexdump(@data[0..5]), $data[6]);
 }; # }}}
 
+push @parser, sub { # Pump % {{{
+	my ($header, $src, $dst, $data, @data) = @_;
+
+	return undef unless @data == 7;
+	return undef unless $data[3] == 0x04;
+	return undef unless $data[4] == 0xa2;
+
+	return sprintf("Pump: Hdr=0x%02x Src=0x%02x Dst=0x%02x data[5]=%s  Pump=%d%%",
+			$header, $src, $dst, hexdump(@data[0..5]), $data[6]);
+}; # }}}
+
 
 
 
