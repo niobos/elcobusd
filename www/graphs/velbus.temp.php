@@ -15,6 +15,7 @@ $timestamp = rrd_timestamp($time);
 
 $command = <<<EOT
 --imgformat PNG --start {$time['start']} --end {$time['end']} \
+--width 600 --height 200 \
 --title "Temperature for $name" \
 --alt-autoscale --vertical-label "°C" \
 'DEF:temp=/mnt/data/rrdtool/$id-TS.rrd:temperature:AVERAGE' \
