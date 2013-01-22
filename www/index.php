@@ -68,10 +68,15 @@ if ($refresh != 0)
 	echo '</form>' . "\n";
 ?></p>
 
-<p><img alt="graph" src="graphs/elco_boiler.php?<?php echo change_get($_GET, array()); ?>" />
- <img alt="graph" src="graphs/elco_burner.php?<?php echo change_get($_GET, array()); ?>" />
- <img alt="graph" src="graphs/elco_outside.php?<?php echo change_get($_GET, array()); ?>" />
- <img alt="graph" src="graphs/elco_tap.php?<?php echo change_get($_GET, array()); ?>" />
+ <p>
+  <img alt="graph" src="graphs/elco_burner.php?<?php echo change_get($_GET, array()); ?>" /><br/>
+  <img alt="graph" src="graphs/elco_boiler.php?<?php echo change_get($_GET, array()); ?>" /><br/>
+  <img alt="graph" src="graphs/velbus.temp.php?id=04&name=living&<?php echo change_get($_GET, array()); ?>" /><br/>
+  <img alt="graph" src="graphs/velbus.temp.php?id=0f&name=bathroom&<?php echo change_get($_GET, array()); ?>" /><br/>
+  <img alt="graph" src="graphs/velbus.temp.php?id=10&name=office&<?php echo change_get($_GET, array()); ?>" /><br/>
+  <img alt="graph" src="graphs/velbus.temp.php?id=08&name=attic&<?php echo change_get($_GET, array()); ?>" /><br/>
+  <img alt="graph" src="graphs/elco_tap.php?<?php echo change_get($_GET, array()); ?>" /><br/>
+  <img alt="graph" src="graphs/elco_outside.php?<?php echo change_get($_GET, array()); ?>" /><br/>
  </p>
 </body>
 </html>										     
