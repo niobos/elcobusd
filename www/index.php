@@ -81,4 +81,4 @@ if ($refresh != 0)
   <img alt="graph" src="graphs/elco_pressure.php?<?php echo change_get($_GET, array()); ?>" /><br/>
  </p>
 </body>
-</html>										     
+</html>
