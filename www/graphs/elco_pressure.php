@@ -9,6 +9,7 @@ $timestamp = rrd_timestamp($time);
 $command = <<<EOT
 --imgformat PNG --start {$time['start']} --end {$time['end']} \
 --width 600 --height 200 \
+-l 0 \
 DEF:pressure=/mnt/data/rrdtool/elco/00-pressure.rrd:pressure:AVERAGE \
 "LINE1:pressure#ff0000:Pressure" \
 VDEF:pressure_avg=pressure,AVERAGE \
