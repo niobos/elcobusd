@@ -153,6 +153,17 @@ push @parser, sub { # Pump % {{{
 			$header, $src, $dst, hexdump(@data[0..5]), $data[6]);
 }; # }}}
 
+push @parser, sub { # Pressure {{{
+	my ($header, $src, $dst, $data, @data) = @_;
+
+	return undef unless @data == 8;
+	return undef unless $data[3] == 0x30;
+	return undef unless $data[4] == 0x63;
+
+	return sprintf("Pressure: Hdr=0x%02x Src=0x%02x Dst=0x%02x data[5]=%s  Pressure=%3.1fbar",
+			$header, $src, $dst, hexdump(@data[0..6]), $data[7]/10);
+}; # }}}
+
 
 
 
