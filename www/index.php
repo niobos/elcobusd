@@ -78,6 +78,7 @@ if ($refresh != 0)
   <img alt="graph" src="graphs/velbus.temp.php?id=08&name=attic&<?php echo change_get($_GET, array()); ?>" /><br/>
   <img alt="graph" src="graphs/elco_tap.php?<?php echo change_get($_GET, array()); ?>" /><br/>
   <img alt="graph" src="graphs/elco_outside.php?<?php echo change_get($_GET, array()); ?>" /><br/>
+  <img alt="graph" src="graphs/elco_pressure.php?<?php echo change_get($_GET, array()); ?>" /><br/>
  </p>
 </body>
 </html>										     

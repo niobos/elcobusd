@@ -39,3 +39,9 @@ for f in *-pump.rrd; do
 	echo "Updating pump $ADDR"
 	"$TOOLPATH/update-pump.sh" "$ADDR"
 done
+
+for f in *-pressure.rrd; do
+	ADDR="${f%%-pressure.rrd}"
+	echo "Updating pressure $ADDR"
+	"$TOOLPATH/update-pressure.sh" "$ADDR"
+done
