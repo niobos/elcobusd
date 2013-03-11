@@ -52,6 +52,7 @@ AC_CONFIG_FILES([
 	rrdtool/Makefile
 	src/Makefile
 	test/Makefile
+	www/Makefile
 	])
 
 AC_OUTPUT
