@@ -2,8 +2,6 @@
 
 use strict;
 use warnings;
-use Data::ParseBinary;
-use Data::Dumper;
 
 
 sub hexdump { # {{{
